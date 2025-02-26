@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radwan Salem - CV</title>
     <style>
+  <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -36,24 +37,6 @@
         .header-content {
             text-align: left;
         }
-        .contact-info {
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            margin: 5px 0;
-        }
-        .contact-info img {
-            width: 20px;
-            height: 20px;
-            margin-left: 5px;
-        }
         .download-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -76,6 +59,19 @@
             background: #333;
             color: white;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .footer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .footer-info img {
+            width: 20px;
+            height: 20px;
         }
         @media (max-width: 768px) {
             header {
@@ -86,9 +82,9 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .contact-info {
-                align-items: center;
-                text-align: center;
+            footer {
+                flex-direction: column;
+                gap: 10px;
             }
         }
     </style>
@@ -102,13 +98,6 @@
                 <p>Digital Transformation & Training Senior Specialist</p>
                 <a href="Radwan's CV 2025.pdf" download class="download-btn">Download CV</a>
             </div>
-        </div>
-        <div class="contact-info">
-            <a href="mailto:radwanasalem1@gmail.com">radwanasalem1@gmail.com</a>
-            <a href="tel:+201063325515">01063325515</a>
-            <a href="https://www.linkedin.com/in/radwan-salem/" target="_blank">
-                <img src="LinkedIn_logo_initials.png" alt="LinkedIn"> LinkedIn
-            </a>
         </div>
     </header>
     
@@ -134,7 +123,7 @@
     
     <section class="skills">
         <h2>Skills</h2>
-        <ul>
+                <ul>
             <li>Leadership & Management</li>
             <li>Data Analysis & Reporting</li>
             <li>Digital Transformation & Process Improvement</li>
@@ -148,6 +137,18 @@
     </section>
     
     <footer>
+        <div class="footer-info">
+            <img src="email-icon.png" alt="Email">
+            <a href="mailto:radwanasalem1@gmail.com" style="color: white; text-decoration: none;">radwanasalem1@gmail.com</a>
+        </div>
+        <div class="footer-info">
+            <img src="phone-icon.png" alt="Phone">
+            <a href="tel:+201063325515" style="color: white; text-decoration: none;">01063325515</a>
+        </div>
+        <div class="footer-info">
+            <img src="linkedin-icon.png" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/radwan-salem/" target="_blank" style="color: white; text-decoration: none;">LinkedIn</a>
+        </div>
         <p>&copy; 2025 Radwan Salem. All rights reserved.</p>
     </footer>
 </body>
